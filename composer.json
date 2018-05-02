@@ -1,0 +1,14 @@
+{
+  "name": "drupal/user_api",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/user_api",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/user_api",
+    "source": "http://cgit.drupalcode.org/user_api"
+  },
+  "require": { }
+}
