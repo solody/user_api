@@ -100,9 +100,10 @@ class UserInfoResource extends ResourceBase
         $user = User::load($this->currentUser->id());
         $data = [
             'base' => $user,
-            'roles' => $user->getRoles(),
-            'sdfs'=>12367897
+            'roles' => $user->getRoles()
         ];
+
+        \Drupal::moduleHandler()->alter('user_api_user_info', $data);
 
         $response = new ResourceResponse($data, 200);
         $disable_cache = new CacheableMetadata();
