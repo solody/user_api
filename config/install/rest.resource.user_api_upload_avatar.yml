@@ -7,12 +7,12 @@ dependencies:
     - simple_oauth
     - user
     - user_api
-id: user_api_user_info
-plugin_id: user_api_user_info
+id: user_api_upload_avatar
+plugin_id: user_api_upload_avatar
 granularity: resource
 configuration:
   methods:
-    - GET
+    - POST
   formats:
     - json
   authentication:

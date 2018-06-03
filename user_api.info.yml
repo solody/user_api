@@ -2,4 +2,11 @@ name: 'User API'
 type: module
 description: 'My Awesome Module'
 core: 8.x
-package: 'Custom'
+package: Custom
+dependencies:
+  - basic_auth
+  - rest
+  - serialization
+  - simple_oauth
+  - user
+  - user_api

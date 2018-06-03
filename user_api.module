@@ -31,7 +31,9 @@ function user_api_install()
 {
     // 为已认证用户添加权限
     user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, [
-        'restful get user_api_user_info'
+        'restful get user_api_user_info',
+        'restful post user_api_upload_avatar',
+        'restful post user_api_reset_password'
     ]);
 }
 
