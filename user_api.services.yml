@@ -1,0 +1,4 @@
+services:
+  user_api.user_creator:
+    class: Drupal\user_api\UserCreator
+    arguments: ['@language_manager', '@logger.factory']
