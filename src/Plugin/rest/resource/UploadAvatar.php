@@ -102,8 +102,8 @@ class UploadAvatar extends ResourceBase
             if ($this->fileData === FALSE) {
                 throw new BadRequestHttpException('Base64文件数据转换失败');
             }
-            $directory = \Drupal::service('file_system')->realpath(file_default_scheme() . "://");
-            $directory .= '/pictures/rest';
+            // $directory = \Drupal::service('file_system')->realpath(file_default_scheme() . "://");
+            $directory = file_default_scheme() . '://pictures/rest';
             file_prepare_directory($directory, FILE_MODIFY_PERMISSIONS | FILE_CREATE_DIRECTORY);
 
             // Determine image type
